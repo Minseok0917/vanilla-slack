@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/variable.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/slack.css" />
+  </head>
+  <body>
+    <div class="slack flex">
+      <header class="slack-header"></header>
+      <section class="slack-section flex flex-1">
+        <nav class="slack-nav flex">
+          <div class="workspace-menu flex">
+            <div class="workspace-menu-item flex-center selected">A</div>
+            <div class="workspace-menu-item flex-center">B</div>
+            <div class="workspace-menu-item flex-center">C</div>
+            <div class="workspace-menu-item flex-center">D</div>
+          </div>
+          <div class="workspace-info flex">
+            <div class="workspace-info-header">
+              <h2 class="workspace-title">DEV-SDHS</h2>
+            </div>
+            <div class="workspace-info-section flex-1">
+              <details class="workspace-details" open>
+                <summary class="workspace-details-title">채널</summary>
+                <ul class="channel-menu">
+                  <li class="channel-menu-item">
+                    <span>#</span>
+                    <span>일반</span>
+                  </li>
+                  <li class="channel-menu-item selected">
+                    <span>#</span>
+                    <span>일반</span>
+                  </li>
+                  <li class="channel-menu-item">
+                    <span>#</span>
+                    <span>일반</span>
+                  </li>
+                </ul>
+              </details>
+            </div>
+            <!-- <div class="workspace-info-footer"></div> -->
+          </div>
+        </nav>
+        <article class="channel flex-1 flex">
+          <div class="channel-header">
+            <p class="channel-title"># 일반</p>
+          </div>
+          <div class="channel-section flex-1"></div>
+          <div class="channel-footer">
+            <div class="message-form flex">
+              <input
+                type="text"
+                class="message-input flex-1"
+                placeholder="#일반에 메시지 보내기"
+              />
+              <button class="message-send"></button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+    <script src="js/common.js" type="module"></script>
+  </body>
+</html>
